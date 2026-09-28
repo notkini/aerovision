@@ -1,0 +1,549 @@
+.av-map-page {
+  padding: 28px;
+  min-height: 100%;
+  background: #f6f8fb;
+  color: #172033;
+}
+
+
+.av-map-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+
+.av-map-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #667085;
+}
+
+
+.av-map-header h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+
+.av-map-header p {
+  max-width: 720px;
+  margin: 10px 0 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+.av-map-live-state {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 14px;
+  border: 1px solid #e3e7ee;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #667085;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+
+.av-live-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #98a2b3;
+}
+
+
+.av-live-indicator.online {
+  background: #12b76a;
+}
+
+
+.av-map-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #fecdca;
+  border-radius: 9px;
+  background: #fef3f2;
+  color: #b42318;
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   TELEMETRY
+   ========================================================= */
+
+
+.av-map-panel {
+  border: 1px solid #e3e7ee;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+
+.av-telemetry-panel {
+  padding: 20px;
+}
+
+
+.av-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+
+.av-panel-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #98a2b3;
+}
+
+
+.av-panel-header h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+
+.av-telemetry-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  color: #667085;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.av-telemetry-status.connected {
+  border-color: #abefc6;
+  background: #ecfdf3;
+  color: #027a48;
+}
+
+
+.av-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+
+.av-telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  border-top: 1px solid #eef0f4;
+}
+
+
+.av-telemetry-item {
+  min-width: 0;
+  padding: 16px 14px 4px;
+  border-right: 1px solid #eef0f4;
+}
+
+
+.av-telemetry-item:last-child {
+  border-right: none;
+}
+
+
+.av-telemetry-label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #98a2b3;
+}
+
+
+.av-telemetry-value {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #172033;
+}
+
+
+.av-telemetry-detail {
+  display: block;
+  margin-top: 4px;
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   STAT ROW
+   ========================================================= */
+
+
+.av-map-stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 14px 0;
+}
+
+
+.av-map-stat {
+  padding: 14px 16px;
+  border: 1px solid #e3e7ee;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+
+.av-map-stat span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  color: #98a2b3;
+}
+
+
+.av-map-stat strong {
+  display: block;
+  font-size: 18px;
+  color: #172033;
+}
+
+
+/* =========================================================
+   MAP LAYOUT
+   ========================================================= */
+
+
+.av-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 14px;
+}
+
+
+.av-map-container {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid #e3e7ee;
+  border-radius: 14px;
+  background: #e9edf2;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+
+.av-leaflet-map {
+  width: 100%;
+  height: 620px;
+}
+
+
+.av-map-overlay {
+  position: absolute;
+  z-index: 1000;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 300px;
+  padding: 13px 15px;
+  border: 1px solid #e3e7ee;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 4px 18px rgba(16, 24, 40, 0.12);
+}
+
+
+.av-map-overlay strong {
+  font-size: 13px;
+}
+
+
+.av-map-overlay span {
+  color: #667085;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SIDE PANEL
+   ========================================================= */
+
+
+.av-map-side-panel {
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid #e3e7ee;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.04);
+}
+
+
+.av-map-side-header {
+  padding: 19px;
+  border-bottom: 1px solid #eef0f4;
+}
+
+
+.av-map-side-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+
+.av-map-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  padding: 30px;
+  text-align: center;
+  color: #667085;
+}
+
+
+.av-map-empty strong {
+  margin-bottom: 7px;
+  color: #344054;
+  font-size: 13px;
+}
+
+
+.av-map-empty span {
+  max-width: 220px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+
+.av-detection-list {
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+
+.av-detection-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 15px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+
+.av-detection-row:last-child {
+  border-bottom: none;
+}
+
+
+.av-detection-row > div:first-child {
+  min-width: 0;
+}
+
+
+.av-detection-row strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #344054;
+}
+
+
+.av-detection-row span {
+  display: block;
+  margin-top: 3px;
+  color: #98a2b3;
+  font-size: 10px;
+}
+
+
+.av-detection-confidence {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #344054;
+}
+
+
+/* =========================================================
+   MAP MARKERS
+   ========================================================= */
+
+
+.av-pixhawk-marker {
+  background: transparent;
+  border: none;
+}
+
+
+.av-pixhawk-marker-core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #155eef;
+  box-shadow:
+    0 0 0 5px rgba(21, 94, 239, 0.18),
+    0 3px 10px rgba(16, 24, 40, 0.25);
+}
+
+
+.av-pixhawk-marker-core span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+
+.av-detection-marker {
+  background: transparent;
+  border: none;
+}
+
+
+.av-detection-marker-core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: #d92d20;
+  color: #ffffff;
+  box-shadow:
+    0 2px 8px rgba(16, 24, 40, 0.25);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   POPUP
+   ========================================================= */
+
+
+.av-map-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 150px;
+}
+
+
+.av-map-popup strong {
+  margin-bottom: 3px;
+  color: #172033;
+  font-size: 13px;
+}
+
+
+.av-map-popup span {
+  color: #667085;
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+
+@media (max-width: 1300px) {
+
+  .av-telemetry-grid {
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  }
+
+  .av-telemetry-item {
+    border-bottom: 1px solid #eef0f4;
+  }
+
+  .av-map-layout {
+    grid-template-columns:
+      minmax(0, 1fr);
+  }
+
+  .av-map-side-panel {
+    min-height: auto;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .av-map-page {
+    padding: 18px;
+  }
+
+  .av-map-header {
+    flex-direction: column;
+  }
+
+  .av-map-stat-row {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .av-telemetry-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .av-map-stat-row {
+    grid-template-columns:
+      1fr;
+  }
+
+  .av-map-container,
+  .av-leaflet-map {
+    min-height: 480px;
+    height: 480px;
+  }
+
+}

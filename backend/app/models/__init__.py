@@ -1,0 +1,36 @@
+from app.models.core import (
+    Alert,
+    AuditLog,
+    Camera,
+    Detection,
+    Device,
+    DeviceRuntime,
+    Event,
+    Mission,
+    Mode,
+    Plate,
+    PlateEvent,
+    Role,
+    User,
+    Violation,
+    Zone,
+)
+
+
+__all__ = [
+    "Alert",
+    "AuditLog",
+    "Camera",
+    "Detection",
+    "Device",
+    "DeviceRuntime",
+    "Event",
+    "Mission",
+    "Mode",
+    "Plate",
+    "PlateEvent",
+    "Role",
+    "User",
+    "Violation",
+    "Zone",
+]
